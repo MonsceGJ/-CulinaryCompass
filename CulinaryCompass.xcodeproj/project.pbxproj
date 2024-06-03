@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392894ED2C0AE95F0010483C /* userModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894EC2C0AE95F0010483C /* userModel.swift */; };
+		392894EF2C0AEA7C0010483C /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894EE2C0AEA7C0010483C /* ForgotPasswordView.swift */; };
+		392894F12C0AEB2D0010483C /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F02C0AEB2D0010483C /* TLButton.swift */; };
+		392894F32C0AEBC00010483C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F22C0AEBC00010483C /* RegisterView.swift */; };
+		392894F52C0BA9320010483C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F42C0BA9310010483C /* HomeView.swift */; };
+		392894F72C0BACE50010483C /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F62C0BACE50010483C /* GenderView.swift */; };
+		392894FD2C0BAD930010483C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894FC2C0BAD930010483C /* FavoritesView.swift */; };
 		395163742C094A79003E39C7 /* CulinaryCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163732C094A79003E39C7 /* CulinaryCompassApp.swift */; };
 		395163762C094A79003E39C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163752C094A79003E39C7 /* ContentView.swift */; };
 		395163782C094A7B003E39C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395163772C094A7B003E39C7 /* Assets.xcassets */; };
 		3951637C2C094A7B003E39C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3951637B2C094A7B003E39C7 /* Preview Assets.xcassets */; };
 		395163862C0A29AF003E39C7 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163852C0A29AF003E39C7 /* ApiClient.swift */; };
 		395163882C0A2A37003E39C7 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163872C0A2A37003E39C7 /* Modelo.swift */; };
-		3951638A2C0A2A5F003E39C7 /* culinaryCompassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163892C0A2A5F003E39C7 /* culinaryCompassViewModel.swift */; };
-		3951638C2C0A2A7F003E39C7 /* culinaryCompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951638B2C0A2A7F003E39C7 /* culinaryCompassView.swift */; };
+		3951638C2C0A2A7F003E39C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951638B2C0A2A7F003E39C7 /* LoginView.swift */; };
 		3951638E2C0A5238003E39C7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951638D2C0A5238003E39C7 /* SplashView.swift */; };
+		395163912C0A88D9003E39C7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163902C0A88D9003E39C7 /* LoginViewModel.swift */; };
+		395163942C0A8D84003E39C7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 395163932C0A8D84003E39C7 /* FirebaseAuth */; };
+		395163962C0A8D84003E39C7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 395163952C0A8D84003E39C7 /* FirebaseFirestore */; };
+		395163982C0A8D84003E39C7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 395163972C0A8D84003E39C7 /* FirebaseFirestoreSwift */; };
+		3951639A2C0A8D84003E39C7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 395163992C0A8D84003E39C7 /* FirebaseStorage */; };
+		3951639C2C0A9206003E39C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392894EC2C0AE95F0010483C /* userModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userModel.swift; sourceTree = "<group>"; };
+		392894EE2C0AEA7C0010483C /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		392894F02C0AEB2D0010483C /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		392894F22C0AEBC00010483C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		392894F42C0BA9310010483C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		392894F62C0BACE50010483C /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		392894FC2C0BAD930010483C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		395163702C094A79003E39C7 /* CulinaryCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CulinaryCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395163732C094A79003E39C7 /* CulinaryCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulinaryCompassApp.swift; sourceTree = "<group>"; };
 		395163752C094A79003E39C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,9 +46,10 @@
 		3951637B2C094A7B003E39C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		395163852C0A29AF003E39C7 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		395163872C0A2A37003E39C7 /* Modelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
-		395163892C0A2A5F003E39C7 /* culinaryCompassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = culinaryCompassViewModel.swift; sourceTree = "<group>"; };
-		3951638B2C0A2A7F003E39C7 /* culinaryCompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = culinaryCompassView.swift; sourceTree = "<group>"; };
+		3951638B2C0A2A7F003E39C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3951638D2C0A5238003E39C7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		395163902C0A88D9003E39C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395163942C0A8D84003E39C7 /* FirebaseAuth in Frameworks */,
+				3951639A2C0A8D84003E39C7 /* FirebaseStorage in Frameworks */,
+				395163962C0A8D84003E39C7 /* FirebaseFirestore in Frameworks */,
+				395163982C0A8D84003E39C7 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +70,7 @@
 		395163672C094A79003E39C7 = {
 			isa = PBXGroup;
 			children = (
+				3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */,
 				395163842C094ACC003E39C7 /* Models */,
 				395163832C094AB5003E39C7 /* Modules */,
 				395163822C094AA5003E39C7 /* NetWork */,
@@ -93,9 +118,14 @@
 		395163832C094AB5003E39C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				395163892C0A2A5F003E39C7 /* culinaryCompassViewModel.swift */,
-				3951638B2C0A2A7F003E39C7 /* culinaryCompassView.swift */,
 				3951638D2C0A5238003E39C7 /* SplashView.swift */,
+				3951638B2C0A2A7F003E39C7 /* LoginView.swift */,
+				392894F22C0AEBC00010483C /* RegisterView.swift */,
+				392894EE2C0AEA7C0010483C /* ForgotPasswordView.swift */,
+				392894F02C0AEB2D0010483C /* TLButton.swift */,
+				392894F42C0BA9310010483C /* HomeView.swift */,
+				392894F62C0BACE50010483C /* GenderView.swift */,
+				392894FC2C0BAD930010483C /* FavoritesView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -104,8 +134,18 @@
 			isa = PBXGroup;
 			children = (
 				395163872C0A2A37003E39C7 /* Modelo.swift */,
+				3951638F2C0A88AD003E39C7 /* ViewModel */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3951638F2C0A88AD003E39C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				395163902C0A88D9003E39C7 /* LoginViewModel.swift */,
+				392894EC2C0AE95F0010483C /* userModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +164,12 @@
 			dependencies = (
 			);
 			name = CulinaryCompass;
+			packageProductDependencies = (
+				395163932C0A8D84003E39C7 /* FirebaseAuth */,
+				395163952C0A8D84003E39C7 /* FirebaseFirestore */,
+				395163972C0A8D84003E39C7 /* FirebaseFirestoreSwift */,
+				395163992C0A8D84003E39C7 /* FirebaseStorage */,
+			);
 			productName = CulinaryCompass;
 			productReference = 395163702C094A79003E39C7 /* CulinaryCompass.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 395163672C094A79003E39C7;
+			packageReferences = (
+				395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 395163712C094A79003E39C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +217,7 @@
 			files = (
 				3951637C2C094A7B003E39C7 /* Preview Assets.xcassets in Resources */,
 				395163782C094A7B003E39C7 /* Assets.xcassets in Resources */,
+				3951639C2C0A9206003E39C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,12 +229,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				395163762C094A79003E39C7 /* ContentView.swift in Sources */,
-				3951638A2C0A2A5F003E39C7 /* culinaryCompassViewModel.swift in Sources */,
 				395163742C094A79003E39C7 /* CulinaryCompassApp.swift in Sources */,
 				395163862C0A29AF003E39C7 /* ApiClient.swift in Sources */,
-				3951638C2C0A2A7F003E39C7 /* culinaryCompassView.swift in Sources */,
+				395163912C0A88D9003E39C7 /* LoginViewModel.swift in Sources */,
+				392894F72C0BACE50010483C /* GenderView.swift in Sources */,
+				392894FD2C0BAD930010483C /* FavoritesView.swift in Sources */,
+				392894F12C0AEB2D0010483C /* TLButton.swift in Sources */,
+				3951638C2C0A2A7F003E39C7 /* LoginView.swift in Sources */,
 				395163882C0A2A37003E39C7 /* Modelo.swift in Sources */,
 				3951638E2C0A5238003E39C7 /* SplashView.swift in Sources */,
+				392894F32C0AEBC00010483C /* RegisterView.swift in Sources */,
+				392894F52C0BA9320010483C /* HomeView.swift in Sources */,
+				392894EF2C0AEA7C0010483C /* ForgotPasswordView.swift in Sources */,
+				392894ED2C0AE95F0010483C /* userModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +456,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		395163932C0A8D84003E39C7 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		395163952C0A8D84003E39C7 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		395163972C0A8D84003E39C7 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		395163992C0A8D84003E39C7 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395163922C0A8D84003E39C7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 395163682C094A79003E39C7 /* Project object */;
 }

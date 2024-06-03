@@ -13,15 +13,18 @@ struct SplashView: View {
     @State private var opacity = 0.5
 
     var body: some View {
+        GeometryReader { geometry in
+            
         if isActive {
-          //  LoginView()
+            LoginView()
         } else {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [.white, .yellow]), startPoint: .top, endPoint: .bottom)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
-
+                
                 VStack {
-                    Image("logoCulinaryCompass") 
+                    Image("logoCulinaryCompass")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 300, height: 200)
@@ -43,6 +46,7 @@ struct SplashView: View {
                     }
                 }
             }
+        }
         }
     }
 }
