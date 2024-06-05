@@ -17,21 +17,21 @@ struct HomeView: View {
                 
                 GenderView()
                     .tabItem {
-                        Image(systemName: "movieclapper")
-                        Text("Generos")
+                        Image(systemName: "plus.app")
+                        Text("Agregar")
                     }.tag(1)
                 
                 Home()
                     .tabItem {
                         Image(systemName: "house")
                         Text("Inicio")
-                            .foregroundColor(.pink)
+                      
                     }.tag(2)
                 
                 FavoritesView()
                     .tabItem {
-                        Image(systemName: "heart")
-                        Text("Favoritos")
+                        Image(systemName: "square.and.arrow.down")
+                        Text("Guardados")
                     }.tag(3)
             }
             .accentColor(.orange)
@@ -41,45 +41,65 @@ struct HomeView: View {
 
 struct Home:View {
     
-    
+    @State private var mostrarPerfil: Bool = false
     
     
     var body: some View{
-        
-        
-        ZStack{
-            
-            LinearGradient(gradient: Gradient(colors: [.yellow, .white]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-            
-            
-            
-            VStack{
+        NavigationView {
+            ZStack{
                 
+                LinearGradient(gradient: Gradient(colors: [.yellow, .white]), startPoint: .top, endPoint: .bottom)
+                    .edgesIgnoringSafeArea(.all)
                 
-                
-                Image("logoCulinaryCompass").resizable().aspectRatio(contentMode: .fit).frame(width: 150).padding(.vertical, 11.0)
-//                Text("Buscar Recetas")
-//                    .font(.title)
-//                    .foregroundColor(.black)
-//                    .padding(.bottom, 20)
-                
-                
-                ScrollView(showsIndicators: false){
-                   SubModuloHome()
+                VStack{
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            withAnimation {
+                                mostrarPerfil.toggle()
+                            }
+                        }){
+                            Image(systemName: "person.crop.circle")
+                                .foregroundColor(.brown.opacity(0.6))
+                                .font(.system(size: 35))
+                                .padding(.horizontal, 30)
+                        }
+                    }
                     
+                    .padding(.trailing)
+                    
+                    
+                    Image("logoCulinaryCompass").resizable().aspectRatio(contentMode: .fit).frame(width: 150).padding(.vertical, 11.0)
+                    //
+                    ScrollView(showsIndicators: false){
+                        SubModuloHome()
+                        
+                    }
+                    
+                    
+                }.padding(.horizontal, 18.0)
+                
+                
+                
+            }.navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            
+        }
+        .overlay(
+            Group {
+                if mostrarPerfil {
+                    PerfilPopupView(cerrarPopup: {
+                        withAnimation {
+                            mostrarPerfil = false
+                        }
+                    })
+                    .transition(.move(edge: .trailing))
                 }
-                
-                
-            }.padding(.horizontal, 18.0)
-            
-            
-            
-        }.navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        
-    
+            }
+            )
     }
+            
+            
 
 }
 
@@ -117,10 +137,170 @@ struct SubModuloHome: View {
             Text("LAS MÁS POPULARES").font(.title3).foregroundColor(.orange).bold().frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
                 .padding(.top)
             
+            ZStack {
+                
+                // aqui debes poner las recetas mas populares
+                
+                Button( action: {buscarReceta(name: "The Witcher 3")}, label: {
+                    
+                    VStack(spacing: 0) {
+                        
+                        Image("The Witcher 3").resizable().scaledToFill()
+                        
+                        
+                        Text("Huevito con jamon").frame(minWidth: 0,  maxWidth: .infinity,  alignment: .leading).background(Color("Blue-Gray"))
+                        
+                    }
+                    
+                    
+                })
+                
+                Image(systemName: "play.circle.fill").resizable().foregroundColor(.white).frame(width: 42.0, height: 42.0)
+                
+            }.frame(minWidth: 0, maxWidth: .infinity,alignment: .center)
+                .padding(.vertical)
+            
+            
+            Text("CATEGORÍAS SUGERIDAS PARA TI").font(.title3).foregroundColor(.orange).bold().frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
+            
+            
+            ScrollView(.horizontal,showsIndicators: false){
+                
+                
+                HStack{
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(.white))
+                                .frame(width: 160, height: 90)
+                            
+                            Image("house").resizable().scaledToFit().frame(width: 42, height: 42)
+                            
+                            
+                            
+                        }
+                        
+                    })
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(.white))
+                                .frame(width: 160, height: 90)
+                            
+                            Image("RPG").resizable().scaledToFit().frame(width: 42, height: 42)
+                            
+                            
+                            
+                        }
+                        
+                    })
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(.white))
+                                .frame(width: 160, height: 90)
+                            
+                            Image("OpenWorld").resizable().scaledToFit().frame(width: 42, height: 42)
+                            
+                            
+                            
+                        }
+                        
+                    })
+                    
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(.white))
+                                .frame(width: 160, height: 90)
+                            
+                            Image("RPG").resizable().scaledToFit().frame(width: 42, height: 42)
+                            
+                            
+                            
+                        }
+                        
+                    })
+                    
+                    Button(action: {}, label: {
+                        
+                        ZStack{
+                            
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color(.white))
+                                .frame(width: 160, height: 90)
+                            
+                            Image("OpenWorld").resizable().scaledToFit().frame(width: 42, height: 42)
+                            
+                            
+                            
+                        }
+                        
+                    })
+                }
+            }
+            
+            
         }
     }
+    
+    // logica de la busqueda
     func buscarReceta(name:String) {
         
+    }
+}
+
+
+struct PerfilPopupView: View {
+    var cerrarPopup: () -> Void
+    
+    var body: some View {
+        ZStack(alignment: .topTrailing) {
+            Color.yellow.opacity(0.6)
+                .edgesIgnoringSafeArea(.all)
+                .onTapGesture {
+                    cerrarPopup()
+                }
+            
+            VStack(alignment: .trailing, spacing: 20) {
+                VStack(alignment: .leading, spacing: 20) {
+                    NavigationLink(destination: ProfileView(viewModel: SaveData()))
+                    {
+                        Text("Perfil")
+                            .foregroundColor(.white)
+                            .font(.system(size: 30))
+                            .padding()
+                    }
+                    Divider()
+                        .background(Color.white)
+                    Spacer()
+                    NavigationLink(destination: LoginView()) {
+                        Text("Cerrar sesión")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                            .padding()
+                    }
+                }
+                .background(Color.brown.opacity(0.5))
+                .frame(width: 200)
+                .cornerRadius(10)
+                .shadow(radius: 10)
+                .padding()
+                .padding(.top, 50)
+            }
+        }
     }
 }
 

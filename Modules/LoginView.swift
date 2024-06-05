@@ -80,9 +80,9 @@ struct LoginView: View {
                         }
                         .padding(.bottom, 50)
                         
-                        //                    NavigationLink(destination: HomeView(), isActive: $viewModel.isAuthenticated) {
-                        //                        EmptyView()
-                        //                    }.hidden()
+                                            NavigationLink(destination: HomeView(), isActive: $viewModel.isAuthenticated) {
+                                               EmptyView()
+                                            }.hidden()
                     }
                     .padding()
                 }

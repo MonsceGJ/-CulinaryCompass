@@ -22,33 +22,27 @@ class LoginViewModel: ObservableObject {
     @Published var isForgotPasswordSuccess = false
     @Published var name = ""
     @Published var isAuthenticated: Bool = false
-    @Published var isRegistered: Bool = false // Nueva propiedad para rastrear el estado de registro
 
     init() {}
 
     // Register function
-    func register(completion: @escaping (Bool) -> Void) {
+    func register() {
         guard validateRegistration() else {
-            completion(false)
             return
         }
 
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             if let error = error {
                 self?.errorMessage = error.localizedDescription
-                completion(false)
                 return
             }
 
             guard let userId = result?.user.uid else {
                 self?.errorMessage = "Failed to retrieve user ID."
-                completion(false)
                 return
             }
 
             self?.insertUserRecord(id: userId)
-            self?.isRegistered = true
-            completion(true)
         }
     }
 
@@ -59,8 +53,6 @@ class LoginViewModel: ObservableObject {
         db.collection("users").document(id).setData(newUser.asDictionary()) { [weak self] error in
             if let error = error {
                 self?.errorMessage = "Failed to insert user record: \(error.localizedDescription)"
-            } else {
-                self?.isRegistered = true // Actualiza el estado de registro cuando se completa con éxito
             }
         }
     }

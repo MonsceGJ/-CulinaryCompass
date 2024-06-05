@@ -14,6 +14,11 @@
 		392894F52C0BA9320010483C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F42C0BA9310010483C /* HomeView.swift */; };
 		392894F72C0BACE50010483C /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894F62C0BACE50010483C /* GenderView.swift */; };
 		392894FD2C0BAD930010483C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894FC2C0BAD930010483C /* FavoritesView.swift */; };
+		392894FF2C0E6EE10010483C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392894FE2C0E6EE10010483C /* ProfileView.swift */; };
+		392895032C0EB87E0010483C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 392895022C0EB87E0010483C /* GoogleService-Info.plist */; };
+		392895052C0EC6D40010483C /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392895042C0EC6D40010483C /* EditProfileView.swift */; };
+		392895072C0EC79B0010483C /* SUImagenPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392895062C0EC79B0010483C /* SUImagenPickerView.swift */; };
+		392895092C0EC9240010483C /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392895082C0EC9240010483C /* SaveData.swift */; };
 		395163742C094A79003E39C7 /* CulinaryCompassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163732C094A79003E39C7 /* CulinaryCompassApp.swift */; };
 		395163762C094A79003E39C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395163752C094A79003E39C7 /* ContentView.swift */; };
 		395163782C094A7B003E39C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395163772C094A7B003E39C7 /* Assets.xcassets */; };
@@ -27,7 +32,6 @@
 		395163962C0A8D84003E39C7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 395163952C0A8D84003E39C7 /* FirebaseFirestore */; };
 		395163982C0A8D84003E39C7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 395163972C0A8D84003E39C7 /* FirebaseFirestoreSwift */; };
 		3951639A2C0A8D84003E39C7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 395163992C0A8D84003E39C7 /* FirebaseStorage */; };
-		3951639C2C0A9206003E39C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,11 @@
 		392894F42C0BA9310010483C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		392894F62C0BACE50010483C /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		392894FC2C0BAD930010483C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		392894FE2C0E6EE10010483C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		392895022C0EB87E0010483C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		392895042C0EC6D40010483C /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		392895062C0EC79B0010483C /* SUImagenPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagenPickerView.swift; sourceTree = "<group>"; };
+		392895082C0EC9240010483C /* SaveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		395163702C094A79003E39C7 /* CulinaryCompass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CulinaryCompass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395163732C094A79003E39C7 /* CulinaryCompassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulinaryCompassApp.swift; sourceTree = "<group>"; };
 		395163752C094A79003E39C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +58,6 @@
 		3951638B2C0A2A7F003E39C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3951638D2C0A5238003E39C7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		395163902C0A88D9003E39C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +78,7 @@
 		395163672C094A79003E39C7 = {
 			isa = PBXGroup;
 			children = (
-				3951639B2C0A9206003E39C7 /* GoogleService-Info.plist */,
+				392895022C0EB87E0010483C /* GoogleService-Info.plist */,
 				395163842C094ACC003E39C7 /* Models */,
 				395163832C094AB5003E39C7 /* Modules */,
 				395163822C094AA5003E39C7 /* NetWork */,
@@ -126,6 +134,8 @@
 				392894F42C0BA9310010483C /* HomeView.swift */,
 				392894F62C0BACE50010483C /* GenderView.swift */,
 				392894FC2C0BAD930010483C /* FavoritesView.swift */,
+				392894FE2C0E6EE10010483C /* ProfileView.swift */,
+				392895042C0EC6D40010483C /* EditProfileView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -144,6 +154,8 @@
 			children = (
 				395163902C0A88D9003E39C7 /* LoginViewModel.swift */,
 				392894EC2C0AE95F0010483C /* userModel.swift */,
+				392895062C0EC79B0010483C /* SUImagenPickerView.swift */,
+				392895082C0EC9240010483C /* SaveData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,7 +229,7 @@
 			files = (
 				3951637C2C094A7B003E39C7 /* Preview Assets.xcassets in Resources */,
 				395163782C094A7B003E39C7 /* Assets.xcassets in Resources */,
-				3951639C2C0A9206003E39C7 /* GoogleService-Info.plist in Resources */,
+				392895032C0EB87E0010483C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +243,8 @@
 				395163762C094A79003E39C7 /* ContentView.swift in Sources */,
 				395163742C094A79003E39C7 /* CulinaryCompassApp.swift in Sources */,
 				395163862C0A29AF003E39C7 /* ApiClient.swift in Sources */,
+				392895072C0EC79B0010483C /* SUImagenPickerView.swift in Sources */,
+				392895052C0EC6D40010483C /* EditProfileView.swift in Sources */,
 				395163912C0A88D9003E39C7 /* LoginViewModel.swift in Sources */,
 				392894F72C0BACE50010483C /* GenderView.swift in Sources */,
 				392894FD2C0BAD930010483C /* FavoritesView.swift in Sources */,
@@ -238,9 +252,11 @@
 				3951638C2C0A2A7F003E39C7 /* LoginView.swift in Sources */,
 				395163882C0A2A37003E39C7 /* Modelo.swift in Sources */,
 				3951638E2C0A5238003E39C7 /* SplashView.swift in Sources */,
+				392894FF2C0E6EE10010483C /* ProfileView.swift in Sources */,
 				392894F32C0AEBC00010483C /* RegisterView.swift in Sources */,
 				392894F52C0BA9320010483C /* HomeView.swift in Sources */,
 				392894EF2C0AEA7C0010483C /* ForgotPasswordView.swift in Sources */,
+				392895092C0EC9240010483C /* SaveData.swift in Sources */,
 				392894ED2C0AE95F0010483C /* userModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
