@@ -32,6 +32,7 @@
 		395163962C0A8D84003E39C7 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 395163952C0A8D84003E39C7 /* FirebaseFirestore */; };
 		395163982C0A8D84003E39C7 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 395163972C0A8D84003E39C7 /* FirebaseFirestoreSwift */; };
 		3951639A2C0A8D84003E39C7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 395163992C0A8D84003E39C7 /* FirebaseStorage */; };
+		39E6B3CB2C113E4600F35D2F /* culinaryCompassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E6B3CA2C113E4600F35D2F /* culinaryCompassViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		3951638B2C0A2A7F003E39C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3951638D2C0A5238003E39C7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		395163902C0A88D9003E39C7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		39E6B3CA2C113E4600F35D2F /* culinaryCompassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = culinaryCompassViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				392894EC2C0AE95F0010483C /* userModel.swift */,
 				392895062C0EC79B0010483C /* SUImagenPickerView.swift */,
 				392895082C0EC9240010483C /* SaveData.swift */,
+				39E6B3CA2C113E4600F35D2F /* culinaryCompassViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				395163912C0A88D9003E39C7 /* LoginViewModel.swift in Sources */,
 				392894F72C0BACE50010483C /* GenderView.swift in Sources */,
 				392894FD2C0BAD930010483C /* FavoritesView.swift in Sources */,
+				39E6B3CB2C113E4600F35D2F /* culinaryCompassViewModel.swift in Sources */,
 				392894F12C0AEB2D0010483C /* TLButton.swift in Sources */,
 				3951638C2C0A2A7F003E39C7 /* LoginView.swift in Sources */,
 				395163882C0A2A37003E39C7 /* Modelo.swift in Sources */,
