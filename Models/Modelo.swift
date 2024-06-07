@@ -14,7 +14,9 @@ import Foundation
 // MARK: - CulinariCompassElement
 struct CulinariCompassElement: Codable, Hashable {
     let image: String?
-    let title, newCategory, path: String?
+    let title: String?
+    let newCategory: String?
+    let path: String?
 }
 
 typealias CulinariCompass = [CulinariCompassElement]?

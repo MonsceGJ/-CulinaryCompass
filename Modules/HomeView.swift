@@ -119,7 +119,9 @@ struct SubModuloHome: View {
                 HStack {
                     if let recetas = recetaEncontrada.culinariCompass {
                         ForEach(recetas, id: \.self) { receta in
-                            PopularRecipeView(receta: receta)
+                            NavigationLink(destination: DetailRecipeView(recipeDetail: receta)) {
+                                                         PopularRecipeView(receta: receta)
+                                                     }
                         }
                     }
                 }
